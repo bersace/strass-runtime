@@ -25,3 +25,5 @@ RUN sed -i "/fr_FR.*UTF-8/s/^# //" /etc/locale.gen && locale-gen && \
 
 # Persister les sessions PHP5.
 VOLUME /var/lib/php5/sessions
+
+WORKDIR /strass
