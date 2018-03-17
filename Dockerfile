@@ -6,6 +6,7 @@ FROM debian:jessie-slim
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        cron \
         ghostscript \
         locales \
         make \
