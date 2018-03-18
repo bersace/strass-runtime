@@ -20,8 +20,11 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists/* && \
     :
 
+ADD https://github.com/krallin/tini/releases/download/v0.17.0/tini /usr/local/sbin/tini
+
 RUN sed -i "/fr_FR.*UTF-8/s/^# //" /etc/locale.gen && locale-gen && \
     useradd --home-dir /strass --create-home --system strass && \
+    chmod +x /usr/local/sbin/tini && \
     :
 
 # Persister les sessions PHP5.
