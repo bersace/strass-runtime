@@ -10,6 +10,7 @@ RUN apt-get update -y && \
         ghostscript \
         locales \
         make \
+        mcron \
         php5-fpm \
         php5-imagick \
         php5-sqlite \
