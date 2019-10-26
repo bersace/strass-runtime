@@ -8,3 +8,6 @@ clean:
 
 push:
 	docker push $(NAME)
+
+test:
+	docker run --rm -it $(NAME) /bin/bash
