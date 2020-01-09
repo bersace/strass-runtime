@@ -38,7 +38,7 @@ RUN set -ex; \
     chmod +x /usr/local/sbin/tini ; \
     :
 
-# Persister les sessions PHP5.
-VOLUME /var/lib/php5/sessions
+# Persister les sessions PHP.
+VOLUME /var/lib/php/sessions
 
 WORKDIR /strass
